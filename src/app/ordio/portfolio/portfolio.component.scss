@@ -1,0 +1,50 @@
+
+.content{
+    background-color: #ffc448;
+    width:100%;
+    height: 100%;
+}
+.content1{
+    padding-top: 10%;
+    margin-left: 12%;
+}
+
+.content2{
+    background-color: #363549;
+    width:100%;
+    height: 90%;
+}
+h2{
+    font-size: 33px;
+    font-weight: bold;
+    color: rgb(31, 31, 31);
+    width:20%;
+}
+.carousel-caption {
+    position: absolute;
+    z-index: 1;
+    // display:table;
+    padding-top: 50%;
+    left: 20%;
+    font-size: 30px !important;
+    font-weight: 450;
+    color: rgb(21, 19, 21);
+    width:100%;
+    height:100%;
+    
+}
+.modal-title{
+    font-size: 20px;
+    font-weight: 450;
+}
+.modal-dialog{
+    color:black;
+    line-height: 1cm;
+    width: 100%;
+}
+div.modal-dialog img{
+    height: 250px;
+    width:459px;
+    border-radius: 10px;
+    margin-left: 3.5%;
+}

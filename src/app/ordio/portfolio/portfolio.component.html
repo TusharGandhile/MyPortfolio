@@ -1,0 +1,46 @@
+<div class="content">
+    <div class="content1">
+    <h2>Look at my recent <br> projects______</h2>
+ 
+<carousel style="padding-top:5%;margin-left:10%;z-index: 0 !important;"
+[loop]="true"
+[autoplay]="true"
+[width]="900"
+[height]="500"
+[cellsToScroll]="1"                                                                                                                                                                                                                                                                                                              
+[cellsToShow]="1">
+    <div class="carousel-cell" *ngFor="let project of projectDetails" (click)="Modalopen.click()">
+      <button type="button" hidden class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#example1Modal" (click)="openModal(project)" #Modalopen>
+        Launch modal
+      </button>
+      <img 
+        src="{{project?.images[0]}}"  
+        />
+        <div class="carousel-caption">
+            <p>{{project.name}}</p>
+        </div>
+       
+    </div>
+   
+  </carousel>
+</div>
+</div>
+<div class="modal fade"  id="example1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{showProject?.name}}</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <img src="{{showProject?.images[1]}}" height="200px" width="450px" alt="">
+      <div class="modal-body"><p>{{showProject?.description}}</p></div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="content2">
+    <h1>Valuablefeedback</h1>
+</div> -->

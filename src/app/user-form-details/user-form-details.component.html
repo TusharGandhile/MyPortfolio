@@ -1,0 +1,51 @@
+<h1>Select fields and fill data</h1>
+<form [formGroup]="UserDetails" (ngSubmit)="submitUserDetails()">
+    <h2>Check the fields you want to add in portfolio:</h2>
+<input type="checkbox" (change)="homeChange($event)">
+<label for="home" >Home</label>
+<div *ngIf="displayHome" formGroupName="home">
+    <div class="form-control">
+        <label>Full Name:</label>
+        <input type="text" formControlName="fullName">
+    </div>
+    <div class="form-control">
+        <label>Role:</label>
+        <input type="text" formControlName="role">
+    </div>
+    <div class="form-control">
+        <label>Twitter:</label>
+        <input type="text" formControlName="twitterLink">
+    </div>
+    <div class="form-control">
+        <label>Instagram:</label>
+        <input type="text" formControlName="instaLink">
+    </div>
+    <div class="form-control">
+        <label>LinkedIn:</label>
+        <input type="text" formControlName="inLink">
+    </div>
+</div>
+<div>
+    <input type="checkbox" (change)="aboutChange($event)">
+    <label for="about">About</label>
+</div>
+<div>
+    <input type="checkbox" (change)="serviceChange($event)">
+    <label for="service">Service</label>
+</div>
+<div>
+    <input type="checkbox" (change)="portfolioChange($event)">
+    <label for="portfolio">Portfolio</label>
+</div>
+<div>
+    <input type="checkbox" (change)="blogChange($event)">
+    <label for="blog">Blog</label>
+</div>
+<div>
+    <input type="checkbox" (change)="contactChange($event)">
+    <label for="contact">Contact</label>
+</div>
+
+<button class="btn btn-primary" type="submit">Save Candidate</button>
+
+</form>

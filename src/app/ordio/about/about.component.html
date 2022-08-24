@@ -1,0 +1,158 @@
+<div class="content">
+    <div class="content1">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="num">
+                <h1>3</h1>
+                <p class="exp">Years Of Experience</p>
+                <h3>ASIF SAYYED</h3>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="about">
+            <h2>About Me  _______</h2>
+            <p class="about-me">With 10 years experience as a professional Web developer,
+             I have acquired the skills and knowledge necessary to make your project a success.
+              I enjoy every step of the design process, from discussion and collaboration.</p>
+              <p class="my-name">-- Asif Sayyed</p>
+              <!-- <button class="btn btn-light cv" download="AMD.jpeg" (click)="downloadFile()">Download CV  <i class="bi bi-box-arrow-down"></i></button> -->
+             
+              <a href="./assets/AMD.jpeg"
+              class="btn btn-default cv"
+              target="_blank"
+              download="AMD.jpeg"
+              >Download Now<i class="bi bi-box-arrow-down" style="padding-left: 5px;"></i></a>
+            </div>
+    </div>
+</div>
+</div>
+<div class="content2">
+    <div class="row second">
+        <div class="col-md-5">
+            <h2>My expert <br> areas _______</h2>
+            <p class="about-me">You can express yourself however you want and whenever you want, for free. 
+                You can customize a template or make your own from scratch, with an immersive 
+                library at your disposal.You can express yourself however you want and whenever you free.<br><br>
+                You can customize a template or make your own from scratch, with an immersive library at your disposal.</p>
+                <button class="btn btn-light">My resume <i class="bi bi-file-earmark-text"></i></button>
+            
+        
+            </div>
+        <div class="col-md-7">
+<div class="row tech1">
+    <div class="col-md-4">
+     <button class="btn btn-light" style="background-color: #2d2c41 ;text-align: center;font-size: 15px;width:135px" (click)="openExperience()">Experience</button>
+    </div>
+
+    <div class="col-md-4">  
+        <button class="btn btn-light" style="background-color: #2d2c41 ;text-align:center;font-size: 15px;width:95px" (click)="openSkills()" id="skill" >Skills</button>
+    </div>
+    <div class="col-md-4">      
+     <button class="btn btn-light" style="background-color: #2d2c41 ;text-align: center;font-size: 15px;width:135px" (click)="openEducation()">Education</button>
+
+    </div>
+</div>
+<div *ngIf="skills" >
+<div  class="row tech">
+    <div class="col-md-4"><img src="./assets/html.png" alt=""></div>
+    <div class="col-md-4">
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+</div>
+<div class="row tech">
+    <div class="col-md-4"><img src="./assets/css.png" alt=""></div>
+    <div class="col-md-4">
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+</div>
+<div class="row tech">
+    <div class="col-md-4"><img src="./assets/js.png" alt=""></div>
+    <div class="col-md-4">
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+</div>
+<div class="row tech">
+    <div class="col-md-4"><img src="./assets/angular.png" alt=""></div>
+    <div class="col-md-4">
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+</div>
+<div class="row tech">
+    <div class="col-md-4"><img src="./assets/node.png" alt=""></div>
+    <div class="col-md-4">
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+</div>
+        </div>
+        <div *ngIf="exp">
+            <div  class="row tech">
+                <div class="col-md-4">
+                    <img src="./assets/AM.jpeg" alt="" style="border-radius: 50%;">
+                    <p>1 Year</p>
+                </div>
+                <div class="col-md-4">
+                   <p>Angular Developer</p>
+                </div>
+            </div>
+            <div class="row tech">
+                <div class="col-md-4">
+                    <img src="./assets/AMD.jpeg" alt="" style="border-radius: 50%;">
+                    <p>1 Year</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Mean Stack Developer <br>(Angular & Node) </p>
+                </div>
+            </div>
+            <div class="row tech">
+                <div class="col-md-4">
+                    <img src="./assets/aws.jpg" alt="" style="border-radius: 50%;">
+                    <p>1 Year</p>
+                    
+                </div>
+                <div class="col-md-4">
+                    <p>Mean Stack Developer <br>(Angular & Node) </p>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="edu">
+            <div  class="row tech">
+                <div class="col-md-4"><p class="head">MCA</p><span style="color:#ffc448;font-size: 16px;">2020-2022</span> </div>
+                <div class="col-md-5">
+                   <p>BJS College,Pune</p>
+                </div>
+            </div>
+            <div class="row tech">
+                <div class="col-md-4"><p class="head">BBA(CA)</p><span style="color:#ffc448;font-size: 16px;">2017-2020</span></div>
+                <div class="col-md-5">
+                   <p>MIT College,Pune</p>
+                </div>
+            </div>
+            <div class="row tech">
+                <div class="col-md-4"><p class="head">HSC</p><span style="color:#ffc448;font-size: 16px;">2015-2017</span></div>
+                <div class="col-md-5">
+                   <p>MIT College,Pune</p>
+                </div>
+            </div>
+            <div class="row tech">
+                <div class="col-md-4"><p class="head">SSC</p><span style="color:#ffc448;font-size: 16px;">2014-2015</span></div>
+                <div class="col-md-5">
+                   <p>Morden Mahavidyalaya,Pune</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>

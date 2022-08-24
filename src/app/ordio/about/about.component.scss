@@ -1,0 +1,135 @@
+.content{
+    background-color: #6244c5;
+    padding-top: 5%;
+    // height: 1000px;
+}
+.content1{
+    height: 760px;
+    padding-top: 3%;
+
+}
+.num{
+    background-color: #ffc448 ;
+    height:350px;
+    width:250px;
+    margin-top: 18%;
+    margin-bottom: 18%;
+}
+.exp{
+    padding-top: 50%;
+    text-align: center;
+    font-size:16px;
+    color:black;
+}
+.about{
+    margin-top: 20%;
+    
+}
+h1{
+    font-size: 300px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 34%;
+    color:#6244c5;
+}
+h2{
+    font-size: 40px; 
+    color:white;
+}
+h3{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15%;
+    color:#6244c5;
+}
+.row{
+    margin-left: 20%;
+    margin-right: 5%;
+}
+.content2{
+    background-color: #2d2c41;
+    color:white;
+    height: 780px;
+}
+.about-me{
+    line-height: 2;
+    font-size: 17px;
+    color:#e1e1e9;
+    margin-bottom: 10%;
+
+}
+div.about a{
+    font-size: 15px;
+}
+.cv{
+    background-color: white;
+    color:black;
+    padding-top: 3%;
+    border: none;
+    height:55px;
+    border-radius: 10px;
+    width:40%;
+}
+// .cv :hover{
+//     background-color: #6244c5;
+//     color:white;
+// }
+.my-name{
+    font-size: 30px;
+    color:#e1e1e9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    padding-left: 45%;
+}
+.sign{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    border: none !important;
+    background-color: #6244c5;
+    color:white;
+    height:55px;
+    width:40%;
+    border-radius: 10px;
+    // font-weight: bold;
+}
+.second{
+    padding-top: 9%;
+}
+.tech1{
+    height:10%;
+    text-align: center;
+    padding-bottom: 10%;
+
+}
+.tech{
+    height:18%;
+    text-align: center;
+    padding-top: 2%;
+    margin-left: 30%;
+}
+div.tech1 button{
+    background-color:rgb(39, 29, 29);
+    // width: 200px;
+    // margin: 10%;
+}
+
+img{
+    height:50px;
+}
+div.row.tech i{
+    color:#ffc448;
+    font-weight: bold;
+    padding: 3px;
+}
+.head{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.active-link{
+    border-bottom: 3px solid;
+    padding-bottom: 0;
+}
